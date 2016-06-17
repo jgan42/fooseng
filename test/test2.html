@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Marquee Plugin Examples</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+		<!--<script src="//rawgithub.com/aamirafridi/jQuery.Marquee/master/jquery.marquee.min.js?v=3" type="text/javascript"></script>-->
+		<script src="jquery-mobile/jquery.marquee.min.js" type="text/javascript"></script>
+		<style type="text/css">
+
+
+			.marquee {
+			  width: 300px;
+			  overflow: hidden;
+			  border:1px solid #ccc;
+			}
+		</style>
+	</head>
+	<body>
+
+		<h3>Options as data attributes</h3>
+<pre>
+&lt;div data-speed=&quot;2000&quot; data-direction=&quot;right&quot; class=&#39;marquee&#39;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit END.&lt;/div&gt;
+</pre>		
+		<div data-speed="2000" data-direction="right" class='marquee'>Lorem ipsum dolor sit amet, consectetur adipiscing elit END.</div>
+		
+
+<script>
+$(function(){
+	$('.marquee').marquee();
+});
+</script>
+
+</body>
+</html>
